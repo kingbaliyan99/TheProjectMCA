@@ -1,0 +1,38 @@
+python -m venv env
+
+OR
+
+~ virtualenv env
+
+4. Activate Virtual Environment:
+
+。 Windows:
+
+.\env\Scripts\activate
+
+• Linux/MacOS
+
+source env/bin/activate
+
+5. Install Requirements
+
+pip install -r requirements.txt
+
+Migrate 
+python manage.py migrate
+
+6. Start Django development server
+
+python manage.py runserver
+
+7. Redis setup on docker.
+
+⚫ Install docker desktop
+
+• Pull redis image and create a container:
+
+docker run --name <container_name> -p 6379:6379 -d redis
+
+• This will start redis server, if not started then open docker desktop and start ther server from there.
+
+8. Access Application on: http://127.0.0.1:8000

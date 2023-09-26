@@ -1,0 +1,70 @@
+{% extends 'utils/base.html' %}
+{% block title %}{{username}} - Room ID: {{room_id}}{% endblock %}
+
+{% block content %}
+{% include 'utils/navbar.html' %}
+<div class="container my-3 room-container">
+    
+    <div class="row">
+        <div class="col-8">
+            <select name="language" id="language-id">
+                <option>Choose Language</option>
+                <option value="4">C (gcc 7.2.0)</option>
+                <option value="10">C++ (g++ 7.2.0)</option>
+                <option value="16">C# (mono 5.4.0.167)</option>
+                <option value="22">Go (1.9)</option>
+                <option value="26">Java (OpenJDK 9 with Eclipse OpenJ9)</option>
+                <option value="27">Java (OpenJDK 8)</option>
+                <option value="29">JavaScript (nodejs 8.5.0)</option>
+                <option value="34">Python (3.6.0)</option>
+                <option value="43">Text (plain text)</option>
+            </select>
+            <div id="editor"></div>
+            <h5 style="margin-top: 10px;">Console:</h5>
+            <div id="status-div"></div>
+        </div>
+        <div class="col-4">
+            <div class="d-flex flex-column">
+                <div class="col input">
+                    <h4>Input</h4>
+                    <div id="input-div"></div>
+                </div>
+                <div class="col output">
+                    <h4>Output</h4>
+                    <div id="output-div"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    $(document).ready(function(){
+
+        const roomID = "{{room_id}}";
+        var username = "{{username}}";
+        var editor = ace.edit("editor");
+        var input_editor = ace.edit("input-div");
+        var output_editor = ace.edit("output-div");
+        var setModeObj = {
+            "4": "c_cpp",
+            "10": "c_cpp",
+            "16": "csharp",
+            "22": "golang",
+            "26": "java",
+            "27": "java",
+            "29": "javascript",
+            "34": "python",
+            "43": "text"
+        }
+    })
+</script>
+
+<script>
+    const room_id = "{{room_id}}"
+    const username = "{{username}}"
+</script>
+{% endblock %}

@@ -1,0 +1,240 @@
+.room-container {
+    margin-bottom: 20px;
+}
+.navbar-brand img {
+    height: 55px;
+    width: 218px;
+}
+.navbar-nav {
+    margin-left: 100px;
+}
+.nav-item a {
+    font-size: 20px;
+    color: black !important;
+}
+#editor { 
+    height: 600px;
+    width: 100%;
+    font-size: 15px;
+}
+
+#submit-code {
+    float: right;
+}
+
+#output-div {
+    white-space: pre-line;
+}
+
+.input h4 {
+    text-align: center;
+}
+
+.output h4 {
+    text-align: center;
+}
+
+#input-div, #output-div {
+    width: 100%;
+    height: 260px;
+}
+
+#status-div {
+    width: 80%;
+    min-height: 200px;
+    margin-top: 10px;
+}
+
+#language-id {
+    margin-bottom: 2px;
+    float: right;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+#chat-div {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    background: rgb(241, 241, 241);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+#chat-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8px;
+    top: 8px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+#chat-box {
+    margin: 10px;
+    padding: 5px;
+}
+
+#chat-show-window {
+    position: absolute;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    top: 30px;
+    bottom: 55px;
+    padding: 5px;
+}
+#chat-control-window {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5px;
+    height: 45px;
+    width: 100%;
+    padding: 5px;
+}
+
+.user {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#chat-control-window input {
+    width: 80%;
+    border-radius: 20px;
+    background: transparent;
+    padding: 5px 10px 5px 10px;
+}
+
+#chat-control-window i {
+    transform: rotate(45deg);
+}
+
+#chat-div span {
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+#status-div span {
+    font-weight: 600;
+}
+
+.index-container {
+    margin-left: 37%;
+    margin-right: 35%;
+    margin-top: 8%;
+    border: 2px solid rgb(219, 242, 160);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.index-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.index-head {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+#user-div {
+    position: absolute;
+    top: 80px;
+    left: 640px;
+    width: 300px;
+    height: 400px;
+    background: rgb(241, 241, 241);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+#user-div h5 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#user-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8px;
+    top: 8px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+#draw {
+    position: absolute;
+    height: 650px;
+    width: 610px;
+    top: 80px;
+    left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: rgb(242, 242, 242);
+    z-index: 100;
+}
+
+#wb-nav {
+    height: 50px;
+    width: 75%;
+    border-radius: 20px;
+    position: absolute;
+    top: 2px;
+    left: 68px;
+    background: rgb(221, 221, 221);
+}
+
+#wb-footer {
+    height: 50px;
+    width: 75%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 2px;
+    left: 68px;
+    background: rgb(221, 221, 221);
+}
+#canvas {
+    position: absolute;
+    top: 55px;
+    left: 15px;
+    background: #fff;
+    border-radius: 20px;
+    cursor: cell;
+
+}
+
+#wboard-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8px;
+    top: 8px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+#draw-btn {
+    margin-left: 37%;
+    margin-top: 8px;
+}
+
+#erase-btn {
+    margin-left: 5px;
+    margin-top: 8px;
+}
